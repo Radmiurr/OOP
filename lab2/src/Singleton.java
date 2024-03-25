@@ -1,7 +1,6 @@
 public class Singleton {
     private static Singleton singleton;
     private int field;
-//    private static final Singleton singleton = new Singleton();
 
 
     private Singleton() {}
