@@ -4,7 +4,6 @@ public class Class1 implements IProcessText {
     public String processText() {
         Scanner scanner = new Scanner(System.in);
         String inputText = scanner.nextLine();
-//        scanner.nextLine(); // очистка буфера
         return inputText;
     }
 
