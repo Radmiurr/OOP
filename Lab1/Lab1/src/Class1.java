@@ -11,7 +11,7 @@ public class Class1 implements IProcessText {
     protected void operation1(String text) {
 
         String[] sentences = text.split("\\. ");
-        int count = 0;
+        int _count = 0;
 
         for (String sentence : sentences) {
             var words = sentence.split(" ");
@@ -20,11 +20,11 @@ public class Class1 implements IProcessText {
             if (length > 3) {
                 System.out.println(sentence);
                 System.out.println("Длина предложения равна:" + length);
-                count++;
+                _count++;
             }
         }
 
-        if (count == 0){
+        if (_count == 0){
             System.out.println("Таких предложений нет!");
         }
     }
