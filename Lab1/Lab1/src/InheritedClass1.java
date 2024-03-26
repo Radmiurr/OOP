@@ -4,12 +4,12 @@ public class InheritedClass1 extends Class1 {
         String _max_sentence = " ";
         int _max_length = 0;
 
-        String[] sentences = _text.split("\\. ");
+        String[] _sentences = _text.split("\\. ");
 
-        for(String sentence : sentences){
-            int _length = sentence.split(" ").length;
+        for(String _sentence : _sentences){
+            int _length = _sentence.split(" ").length;
             if (_length > _max_length){
-                _max_sentence = sentence;
+                _max_sentence = _sentence;
                 _max_length = _length;
             }
         }
