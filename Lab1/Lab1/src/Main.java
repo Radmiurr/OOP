@@ -8,10 +8,10 @@ public class Main {
         if (userChoice == 1) {
             InheritedClass1 instance_inherit1 = new InheritedClass1();
             System.out.println("Выберите операцию (1 или 2): ");
-            int operationChoice = Integer.parseInt(instance_inherit1.processText());
+            int _operationChoice = Integer.parseInt(instance_inherit1.processText());
             System.out.println("Введите текст: ");
             String inputText = instance_inherit1.processText();
-            switch (operationChoice){
+            switch (_operationChoice){
                 case 1:
                     instance_inherit1.operation1(inputText);
                     break;
@@ -23,10 +23,10 @@ public class Main {
         else if (userChoice == 2){
             InheritedClass2 instance_inherit2 = new InheritedClass2();
             System.out.println("Выберите операцию (1 или 2): ");
-            int operationChoice = Integer.parseInt(instance_inherit2.processText());
+            int _operationChoice = Integer.parseInt(instance_inherit2.processText());
             System.out.println("Введите текст: ");
             String inputText = instance_inherit2.processText();
-            switch (operationChoice){
+            switch (_operationChoice){
                 case 1:
                     instance_inherit2.operation1(inputText);
                     break;
