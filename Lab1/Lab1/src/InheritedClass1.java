@@ -1,19 +1,19 @@
 public class InheritedClass1 extends Class1 {
-    protected void operation2(String text) {
+    protected void operation2(String _text) {
 
-        String max_sentence = " ";
-        int max_length = 0;
+        String _max_sentence = " ";
+        int _max_length = 0;
 
-        String[] sentences = text.split("\\. ");
+        String[] sentences = _text.split("\\. ");
 
         for(String sentence : sentences){
-            int length = sentence.split(" ").length;
-            if (length > max_length){
-                max_sentence = sentence;
-                max_length = length;
+            int _length = sentence.split(" ").length;
+            if (_length > _max_length){
+                _max_sentence = sentence;
+                _max_length = _length;
             }
         }
-        System.out.println(max_sentence);
-        System.out.println("Максимальная длина равна: " + max_length);
+        System.out.println(_max_sentence);
+        System.out.println("Максимальная длина равна: " + _max_length);
     }
 }
