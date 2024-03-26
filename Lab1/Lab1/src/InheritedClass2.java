@@ -1,15 +1,15 @@
 public class InheritedClass2 extends InheritedClass1 {
     @Override
-    protected void operation1(String text) {
-        var sentences = text.split("\\. ");
-        int count = 0;
+    protected void operation1(String _text) {
+        var sentences = _text.split("\\. ");
+        int _count = 0;
         for(String sentence : sentences){
             if (sentence.split(" ").length < 5){
                 System.out.println(sentence);
-                count++;
+                _count++;
             }
         }
-        if (count == 0){
+        if (_count == 0){
             System.out.println("Таких предложений нет!");
         }
     }
